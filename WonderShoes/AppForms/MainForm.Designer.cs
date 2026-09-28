@@ -40,6 +40,7 @@
             this.comboBox_Sorting = new System.Windows.Forms.ComboBox();
             this.Login_Role_Label = new System.Windows.Forms.Label();
             this.App_Name = new System.Windows.Forms.Label();
+            this.Add_Shoes_Btn = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.factoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.wonderShoesDataSet = new WonderShoes.WonderShoesDataSet();
@@ -79,6 +80,7 @@
             this.splitContainer1.Panel1.Controls.Add(this.textBox_Search);
             this.splitContainer1.Panel1.Controls.Add(this.comboBox_Sorting);
             this.splitContainer1.Panel1.Controls.Add(this.Login_Role_Label);
+            this.splitContainer1.Panel1.Controls.Add(this.Add_Shoes_Btn);
             this.splitContainer1.Panel1.Controls.Add(this.App_Name);
             this.splitContainer1.Panel1.Controls.Add(this.pictureBox1);
             // 
@@ -168,6 +170,17 @@
             this.App_Name.TabIndex = 1;
             this.App_Name.Text = "Чудо Обувь";
             // 
+            // Add_Shoes_Btn
+            // 
+            this.Add_Shoes_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(178)))), ((int)(((byte)(175)))));
+            this.Add_Shoes_Btn.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Add_Shoes_Btn.Location = new System.Drawing.Point(92, 65);
+            this.Add_Shoes_Btn.Name = "Add_Shoes_Btn";
+            this.Add_Shoes_Btn.Size = new System.Drawing.Size(194, 29);
+            this.Add_Shoes_Btn.TabIndex = 2;
+            this.Add_Shoes_Btn.Text = "Добавить товар";
+            this.Add_Shoes_Btn.UseVisualStyleBackColor = false;
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::WonderShoes.Properties.Resources.Чудо_Обувь;
@@ -221,6 +234,7 @@
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Label App_Name;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button Add_Shoes_Btn;
         private System.Windows.Forms.Label Login_Role_Label;
         private System.Windows.Forms.Label label_Search;
         private System.Windows.Forms.Label label_Filtering;

@@ -120,6 +120,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AppForms\RegistrationForm.resx">
       <DependentUpon>RegistrationForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomUserControl\ShoesUserControl.resx">
       <DependentUpon>ShoesUserControl.cs</DependentUpon>

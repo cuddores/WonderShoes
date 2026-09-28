@@ -79,10 +79,10 @@ namespace WonderShoes.AppForms
             }
             else
             {
-                switch (_users.Id_Role)
-                {
-                    case 1: role = "Администратор"; break;
-                    case 2: role = "Менеджер"; break;
+            switch (_users.Id_Role)
+            {
+                case 1: role = "Администратор"; break;
+                case 2: role = "Менеджер"; break;
                     case 3: role = "Пользователь"; break;
                     default: role = "Гость"; break;
                 }

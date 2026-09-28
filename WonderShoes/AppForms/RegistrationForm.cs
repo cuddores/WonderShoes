@@ -14,6 +14,7 @@ namespace WonderShoes.AppForms
 {
     public partial class RegistrationForm : Form
     {
+        bool IsSign = true;
         public RegistrationForm()
         {
             InitializeComponent();

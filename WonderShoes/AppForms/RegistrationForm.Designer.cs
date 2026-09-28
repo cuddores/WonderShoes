@@ -105,6 +105,16 @@
             this.tableAdapterManager.UpdateOrder = WonderShoes.WonderShoesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = this.usersTableAdapter;
             // 
+            // loginLabel
+            // 
+            loginLabel.AutoSize = true;
+            loginLabel.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            loginLabel.Location = new System.Drawing.Point(18, 122);
+            loginLabel.Name = "loginLabel";
+            loginLabel.Size = new System.Drawing.Size(64, 22);
+            loginLabel.TabIndex = 10;
+            loginLabel.Text = "Login:";
+            // 
             // loginTextBox
             // 
             this.loginTextBox.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
@@ -124,6 +134,17 @@
             this.Authorization_Btn.Text = "Войти";
             this.Authorization_Btn.UseVisualStyleBackColor = false;
             this.Authorization_Btn.Click += new System.EventHandler(this.Authorization_Btn_Click);
+            // 
+            // Guest_Btn
+            // 
+            Guest_Btn.AutoSize = true;
+            Guest_Btn.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            Guest_Btn.Location = new System.Drawing.Point(175, 228);
+            Guest_Btn.Name = "Guest_Btn";
+            Guest_Btn.Size = new System.Drawing.Size(124, 20);
+            Guest_Btn.TabIndex = 13;
+            Guest_Btn.Text = "Войти как гость";
+            Guest_Btn.Click += new System.EventHandler(this.Guest_Btn_Click);
             // 
             // RegistrationForm
             // 
