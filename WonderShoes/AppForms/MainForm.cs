@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using WonderShoes.AppForms;
 using WonderShoes.Models;
 using WonderShoes.CustomUserControl;
+using System.Windows.Forms.VisualStyles;
 
 namespace WonderShoes.AppForms
 {
@@ -99,6 +100,7 @@ namespace WonderShoes.AppForms
                 label_Sorting.Visible = false;
                 label_Search.Visible = false;
                 textBox_Search.Visible = false;
+                button_Clear_Filter.Visible = false;
 
                 return;
             }
@@ -112,6 +114,7 @@ namespace WonderShoes.AppForms
             label_Sorting.Visible = true;
             label_Search.Visible = true;
             textBox_Search.Visible = true;
+            button_Clear_Filter.Visible = true;
         }
 
 
@@ -131,7 +134,7 @@ namespace WonderShoes.AppForms
             comboBox_Filtering.ValueMember = "Id";
             comboBox_Filtering.SelectedIndex = 0;
         }
-
+     
         private void comboBox_Filtering_SelectedIndexChanged(object sender, EventArgs e)
         {
             var selectedFilter = comboBox_Filtering.SelectedItem;
@@ -180,6 +183,13 @@ namespace WonderShoes.AppForms
         {
             currentSearch = textBox_Search.Text.ToLower(); 
             ShowProducts(); 
+        }
+
+        private void button_Clear_Filter_Click(object sender, EventArgs e)
+        {
+            textBox_Search.Clear();
+            comboBox_Sorting.SelectedIndex = 0;
+            comboBox_Filtering.SelectedIndex = 0;
         }
     }
 }
