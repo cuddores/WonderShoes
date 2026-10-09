@@ -36,9 +36,9 @@
             this.Price_Label = new System.Windows.Forms.Label();
             this.AddToCart_Btn = new System.Windows.Forms.Button();
             this.Shoes_Image = new System.Windows.Forms.PictureBox();
-            this.wonderShoesDataSet = new WonderShoes.WonderShoesDataSet();
-            this.product_Size_RangeTableAdapter = new WonderShoes.WonderShoesDataSetTableAdapters.Product_Size_RangeTableAdapter();
-            this.tableAdapterManager = new WonderShoes.WonderShoesDataSetTableAdapters.TableAdapterManager();
+            this.wonderShoesDataSet = new WonderShoes.WonderShoes_KornDataSet();
+            this.product_Size_RangeTableAdapter = new WonderShoes.WonderShoes_KornDataSetTableAdapters.Product_Size_RangeTableAdapter();
+            this.tableAdapterManager = new WonderShoes.WonderShoes_KornDataSetTableAdapters.TableAdapterManager();
             this.comboBox_Size = new System.Windows.Forms.ComboBox();
             this.productSizeRangeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.Shoes_Image)).BeginInit();
@@ -138,7 +138,7 @@
             this.tableAdapterManager.ProductsTableAdapter = null;
             this.tableAdapterManager.RolesTableAdapter = null;
             this.tableAdapterManager.SubcategoriesTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = WonderShoes.WonderShoesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = WonderShoes.WonderShoes_KornDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = null;
             // 
             // comboBox_Size
@@ -153,6 +153,7 @@
             this.comboBox_Size.Size = new System.Drawing.Size(63, 23);
             this.comboBox_Size.TabIndex = 7;
             this.comboBox_Size.ValueMember = "Size";
+            this.comboBox_Size.SelectedIndexChanged += new System.EventHandler(this.comboBox_Size_SelectedIndexChanged);
             // 
             // productSizeRangeBindingSource
             // 
@@ -191,10 +192,11 @@
         private System.Windows.Forms.Label Price_Label;
         private System.Windows.Forms.PictureBox Shoes_Image;
         private System.Windows.Forms.Button AddToCart_Btn;
-        private WonderShoesDataSet wonderShoesDataSet;
-        private WonderShoesDataSetTableAdapters.Product_Size_RangeTableAdapter product_Size_RangeTableAdapter;
-        private WonderShoesDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private WonderShoes_KornDataSet wonderShoesDataSet;
+        private WonderShoes_KornDataSetTableAdapters.Product_Size_RangeTableAdapter product_Size_RangeTableAdapter;
+        private WonderShoes_KornDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.ComboBox comboBox_Size;
         private System.Windows.Forms.BindingSource productSizeRangeBindingSource;
+
     }
 }

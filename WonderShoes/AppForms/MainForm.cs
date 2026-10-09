@@ -57,7 +57,7 @@ namespace WonderShoes.AppForms
                 }
 
 
-                Shoes_List.Controls.Add(new ShoesUserControl(prod));
+                Shoes_List.Controls.Add(new ShoesUserControl(prod, _users));
             }
         }
 
@@ -190,6 +190,11 @@ namespace WonderShoes.AppForms
             textBox_Search.Clear();
             comboBox_Sorting.SelectedIndex = 0;
             comboBox_Filtering.SelectedIndex = 0;
+        }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

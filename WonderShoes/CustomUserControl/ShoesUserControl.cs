@@ -18,14 +18,21 @@ namespace WonderShoes.CustomUserControl
     public partial class ShoesUserControl : UserControl
     {
         private Products _products;
+        private Users _user;
         private int currentProductId;
+        private Color _baseColor;
 
-        public ShoesUserControl(Products products)
+        public ShoesUserControl(Products products, Users user)
         {
             InitializeComponent();
+            _baseColor = this.BackColor;
             _products = products;
             SetInfo();
             LoadSizes();
+            UpdateSizeInfo();
+            _user = user;
+            ApplyRole();
+
         }
 
         private void SetInfo()
@@ -40,7 +47,6 @@ namespace WonderShoes.CustomUserControl
             }
             Factory_Name_Label.Text = $"{_products.Factories.Factory_Name} | {_products.Product_Name}";
             Category_Label.Text = $"Категория: {_products.Categories.Category_Name}";
-            Stock_Label.Text = $"Количество: {_products.Product_Stock.Sum(s => s.Quantity).ToString()}" ;
             Composition_Label.Text = $"Состав: {_products.Composition}";
             Price_Label.Text = $"Цена: {_products.Price.ToString():F2} руб.";
         }
@@ -55,7 +61,6 @@ namespace WonderShoes.CustomUserControl
 
             comboBox_Size.DataSource = sizes;
             AddToCart_Btn.Enabled = sizes.Count > 0;
-            comboBox_Size.SelectedIndex = -1;
         }
 
         private void AddToCart_Btn_Click(object sender, EventArgs e)
@@ -68,5 +73,72 @@ namespace WonderShoes.CustomUserControl
            
         }
 
+        private void comboBox_Size_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            UpdateSizeInfo();
+        }
+
+        private string GetCurrentSize()
+        {
+            if (comboBox_Size.SelectedItem != null)
+                return comboBox_Size.SelectedItem.ToString();
+
+            return comboBox_Size.Items.Count > 0 ? comboBox_Size.Items[0].ToString() : null;
+        }
+
+        private void UpdateSizeInfo()
+        {
+            string selectedSize = GetCurrentSize();
+
+            if (selectedSize == null)
+            {
+                this.BackColor = _baseColor;
+                return;
+            }
+
+            int quantity = _products.Product_Stock
+                .Where(s => s.Size.ToString() == selectedSize)
+                .Sum(s => s.Quantity);
+
+            Stock_Label.Text = $"Количество: {quantity}";
+
+            this.BackColor = quantity <= 3
+                ? ColorTranslator.FromHtml("#ff8080")
+                : _baseColor;
+        }
+
+        private void ApplyRole()
+        {
+            if (_user == null)
+            {
+                AddToCart_Btn.Visible = false;
+                comboBox_Size.Visible = false;
+
+                int total = _products.Product_Stock.Sum(s => s.Quantity);
+                Stock_Label.Text = $"Кол-во: {total}";
+
+                if (total <= 3)
+                {
+                    this.BackColor = ColorTranslator.FromHtml("#ff8080");
+                }
+                else
+                {
+                    this.BackColor = _baseColor;
+                }
+            }
+            else if (_user.Id_Role == 1)
+            {
+                AddToCart_Btn.Visible = true;
+            }
+            else if (_user.Id_Role == 2)
+            {
+                AddToCart_Btn.Visible = true;
+            }
+            else
+            {
+                AddToCart_Btn.Visible = true;
+            }
+        }
     }
 }
+

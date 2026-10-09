@@ -33,10 +33,10 @@
             System.Windows.Forms.Label Guest_Btn;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistrationForm));
             this.Authorization_Label = new System.Windows.Forms.Label();
-            this.wonderShoesDataSet = new WonderShoes.WonderShoesDataSet();
+            this.wonderShoesDataSet = new WonderShoes.WonderShoes_KornDataSet();
             this.usersBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.usersTableAdapter = new WonderShoes.WonderShoesDataSetTableAdapters.UsersTableAdapter();
-            this.tableAdapterManager = new WonderShoes.WonderShoesDataSetTableAdapters.TableAdapterManager();
+            this.usersTableAdapter = new WonderShoes.WonderShoes_KornDataSetTableAdapters.UsersTableAdapter();
+            this.tableAdapterManager = new WonderShoes.WonderShoes_KornDataSetTableAdapters.TableAdapterManager();
             this.loginTextBox = new System.Windows.Forms.TextBox();
             this.Authorization_Btn = new System.Windows.Forms.Button();
             loginLabel = new System.Windows.Forms.Label();
@@ -102,7 +102,7 @@
             this.tableAdapterManager.ProductsTableAdapter = null;
             this.tableAdapterManager.RolesTableAdapter = null;
             this.tableAdapterManager.SubcategoriesTableAdapter = null;
-            this.tableAdapterManager.UpdateOrder = WonderShoes.WonderShoesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            this.tableAdapterManager.UpdateOrder = WonderShoes.WonderShoes_KornDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.UsersTableAdapter = this.usersTableAdapter;
             // 
             // loginTextBox
@@ -151,10 +151,10 @@
         #endregion
 
         private System.Windows.Forms.Label Authorization_Label;
-        private WonderShoesDataSet wonderShoesDataSet;
+        private WonderShoes_KornDataSet wonderShoesDataSet;
         private System.Windows.Forms.BindingSource usersBindingSource;
-        private WonderShoesDataSetTableAdapters.UsersTableAdapter usersTableAdapter;
-        private WonderShoesDataSetTableAdapters.TableAdapterManager tableAdapterManager;
+        private WonderShoes_KornDataSetTableAdapters.UsersTableAdapter usersTableAdapter;
+        private WonderShoes_KornDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.TextBox loginTextBox;
         private System.Windows.Forms.Button Authorization_Btn;
     }

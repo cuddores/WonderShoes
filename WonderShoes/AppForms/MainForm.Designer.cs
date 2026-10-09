@@ -43,8 +43,8 @@
             this.App_Name = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.factoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.wonderShoesDataSet = new WonderShoes.WonderShoesDataSet();
-            this.factoriesTableAdapter = new WonderShoes.WonderShoesDataSetTableAdapters.FactoriesTableAdapter();
+            this.wonderShoesDataSet = new WonderShoes.WonderShoes_KornDataSet();
+            this.factoriesTableAdapter = new WonderShoes.WonderShoes_KornDataSetTableAdapters.FactoriesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -218,6 +218,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Главная форма";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
@@ -243,8 +244,8 @@
         private System.Windows.Forms.Label label_Sorting;
         private System.Windows.Forms.TextBox textBox_Search;
         private System.Windows.Forms.ComboBox comboBox_Sorting;
-        private WonderShoesDataSet wonderShoesDataSet;
-        private WonderShoesDataSetTableAdapters.FactoriesTableAdapter factoriesTableAdapter;
+        private WonderShoes_KornDataSet wonderShoesDataSet;
+        private WonderShoes_KornDataSetTableAdapters.FactoriesTableAdapter factoriesTableAdapter;
         private System.Windows.Forms.BindingSource factoriesBindingSource;
         private System.Windows.Forms.ComboBox comboBox_Filtering;
         private System.Windows.Forms.Button button_Clear_Filter;

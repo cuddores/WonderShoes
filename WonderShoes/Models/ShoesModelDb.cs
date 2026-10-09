@@ -8,7 +8,7 @@ namespace WonderShoes.Models
     public partial class ShoesModelDb : DbContext
     {
         public ShoesModelDb()
-            : base("name=ShoesModelDb")
+            : base("name=ShoesModelDb1")
         {
         }
 
@@ -21,7 +21,6 @@ namespace WonderShoes.Models
         public virtual DbSet<Products> Products { get; set; }
         public virtual DbSet<Roles> Roles { get; set; }
         public virtual DbSet<Subcategories> Subcategories { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Users> Users { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
