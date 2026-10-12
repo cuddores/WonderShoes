@@ -19,7 +19,7 @@ namespace WonderShoes.CustomUserControl
     {
         private Products _products;
         private Users _user;
-        private int currentProductId;
+        //private int currentProductId;
         private Color _baseColor;
 
         public ShoesUserControl(Products products, Users user)
@@ -48,7 +48,7 @@ namespace WonderShoes.CustomUserControl
             Factory_Name_Label.Text = $"{_products.Factories.Factory_Name} | {_products.Product_Name}";
             Category_Label.Text = $"Категория: {_products.Categories.Category_Name}";
             Composition_Label.Text = $"Состав: {_products.Composition}";
-            Price_Label.Text = $"Цена: {_products.Price.ToString():F2} руб.";
+            Price_Label.Text = $"Цена: {_products.Price.ToString()} руб.";
         }
 
         private void LoadSizes()
@@ -70,7 +70,8 @@ namespace WonderShoes.CustomUserControl
                 MessageBox.Show("Выберите размер", "Корзина", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-           
+
+            
         }
 
         private void comboBox_Size_SelectedIndexChanged(object sender, EventArgs e)

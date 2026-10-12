@@ -60,6 +60,7 @@ namespace WonderShoes.AppForms
                 else
                 {
                     MessageBox.Show("Неверный логин", "Ошибка входа", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    loginTextBox.Clear();
                 }
             }
             catch (Exception ex)

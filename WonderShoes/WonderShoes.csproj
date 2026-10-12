@@ -96,6 +96,12 @@
     <Compile Include="AppForms\UserCart.Designer.cs">
       <DependentUpon>UserCart.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomUserControl\CartUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomUserControl\CartUserControl.Designer.cs">
+      <DependentUpon>CartUserControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomUserControl\ShoesUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -129,6 +135,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AppForms\UserCart.resx">
       <DependentUpon>UserCart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomUserControl\CartUserControl.resx">
+      <DependentUpon>CartUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomUserControl\ShoesUserControl.resx">
       <DependentUpon>ShoesUserControl.cs</DependentUpon>

@@ -43,7 +43,7 @@
             this.App_Name = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.factoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.wonderShoesDataSet = new WonderShoes.WonderShoes_KornDataSet();
+            this.wonderShoes_KornDataSet = new WonderShoes.WonderShoes_KornDataSet();
             this.factoriesTableAdapter = new WonderShoes.WonderShoes_KornDataSetTableAdapters.FactoriesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -51,7 +51,7 @@
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.factoriesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderShoesDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderShoes_KornDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // Shoes_List
@@ -98,7 +98,7 @@
             this.button_Clear_Filter.Location = new System.Drawing.Point(474, 35);
             this.button_Clear_Filter.Name = "button_Clear_Filter";
             this.button_Clear_Filter.Size = new System.Drawing.Size(63, 23);
-            this.button_Clear_Filter.TabIndex = 11;
+            this.button_Clear_Filter.TabIndex = 3;
             this.button_Clear_Filter.Text = "Сброс";
             this.button_Clear_Filter.UseVisualStyleBackColor = true;
             this.button_Clear_Filter.Click += new System.EventHandler(this.button_Clear_Filter_Click);
@@ -110,7 +110,7 @@
             this.comboBox_Filtering.Location = new System.Drawing.Point(543, 35);
             this.comboBox_Filtering.Name = "comboBox_Filtering";
             this.comboBox_Filtering.Size = new System.Drawing.Size(152, 23);
-            this.comboBox_Filtering.TabIndex = 10;
+            this.comboBox_Filtering.TabIndex = 0;
             this.comboBox_Filtering.SelectedIndexChanged += new System.EventHandler(this.comboBox_Filtering_SelectedIndexChanged);
             // 
             // label_Search
@@ -149,7 +149,7 @@
             this.textBox_Search.Location = new System.Drawing.Point(898, 35);
             this.textBox_Search.Name = "textBox_Search";
             this.textBox_Search.Size = new System.Drawing.Size(193, 23);
-            this.textBox_Search.TabIndex = 6;
+            this.textBox_Search.TabIndex = 2;
             this.textBox_Search.TextChanged += new System.EventHandler(this.textBox_Search_TextChanged);
             // 
             // comboBox_Sorting
@@ -159,7 +159,7 @@
             this.comboBox_Sorting.Location = new System.Drawing.Point(702, 35);
             this.comboBox_Sorting.Name = "comboBox_Sorting";
             this.comboBox_Sorting.Size = new System.Drawing.Size(189, 23);
-            this.comboBox_Sorting.TabIndex = 5;
+            this.comboBox_Sorting.TabIndex = 1;
             this.comboBox_Sorting.SelectedIndexChanged += new System.EventHandler(this.comboBox_Sorting_SelectedIndexChanged);
             // 
             // Login_Role_Label
@@ -196,12 +196,12 @@
             // factoriesBindingSource
             // 
             this.factoriesBindingSource.DataMember = "Factories";
-            this.factoriesBindingSource.DataSource = this.wonderShoesDataSet;
+            this.factoriesBindingSource.DataSource = this.wonderShoes_KornDataSet;
             // 
-            // wonderShoesDataSet
+            // wonderShoes_KornDataSet
             // 
-            this.wonderShoesDataSet.DataSetName = "WonderShoesDataSet";
-            this.wonderShoesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.wonderShoes_KornDataSet.DataSetName = "WonderShoes_KornDataSet";
+            this.wonderShoes_KornDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // factoriesTableAdapter
             // 
@@ -227,7 +227,7 @@
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.factoriesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderShoesDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderShoes_KornDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -244,7 +244,7 @@
         private System.Windows.Forms.Label label_Sorting;
         private System.Windows.Forms.TextBox textBox_Search;
         private System.Windows.Forms.ComboBox comboBox_Sorting;
-        private WonderShoes_KornDataSet wonderShoesDataSet;
+        private WonderShoes_KornDataSet wonderShoes_KornDataSet;
         private WonderShoes_KornDataSetTableAdapters.FactoriesTableAdapter factoriesTableAdapter;
         private System.Windows.Forms.BindingSource factoriesBindingSource;
         private System.Windows.Forms.ComboBox comboBox_Filtering;

@@ -62,7 +62,7 @@
             Guest_Btn.Location = new System.Drawing.Point(176, 228);
             Guest_Btn.Name = "Guest_Btn";
             Guest_Btn.Size = new System.Drawing.Size(122, 21);
-            Guest_Btn.TabIndex = 13;
+            Guest_Btn.TabIndex = 2;
             Guest_Btn.Text = "Войти как гость";
             Guest_Btn.Click += new System.EventHandler(this.Guest_Btn_Click);
             // 
@@ -111,7 +111,7 @@
             this.loginTextBox.Location = new System.Drawing.Point(88, 117);
             this.loginTextBox.Name = "loginTextBox";
             this.loginTextBox.Size = new System.Drawing.Size(356, 33);
-            this.loginTextBox.TabIndex = 11;
+            this.loginTextBox.TabIndex = 0;
             // 
             // Authorization_Btn
             // 
@@ -120,7 +120,7 @@
             this.Authorization_Btn.Location = new System.Drawing.Point(76, 185);
             this.Authorization_Btn.Name = "Authorization_Btn";
             this.Authorization_Btn.Size = new System.Drawing.Size(322, 40);
-            this.Authorization_Btn.TabIndex = 12;
+            this.Authorization_Btn.TabIndex = 1;
             this.Authorization_Btn.Text = "Войти";
             this.Authorization_Btn.UseVisualStyleBackColor = false;
             this.Authorization_Btn.Click += new System.EventHandler(this.Authorization_Btn_Click);

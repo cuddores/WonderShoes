@@ -35,7 +35,7 @@
             this.App_Name = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.factoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.wonderShoesDataSet = new WonderShoes.WonderShoes_KornDataSet();
+            this.wonderShoes_KornDataSet = new WonderShoes.WonderShoes_KornDataSet();
             this.factoriesTableAdapter = new WonderShoes.WonderShoes_KornDataSetTableAdapters.FactoriesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
@@ -43,7 +43,7 @@
             this.splitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.factoriesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderShoesDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderShoes_KornDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // Cart_List
@@ -98,12 +98,12 @@
             // factoriesBindingSource
             // 
             this.factoriesBindingSource.DataMember = "Factories";
-            this.factoriesBindingSource.DataSource = this.wonderShoesDataSet;
+            this.factoriesBindingSource.DataSource = this.wonderShoes_KornDataSet;
             // 
-            // wonderShoesDataSet
+            // wonderShoes_KornDataSet
             // 
-            this.wonderShoesDataSet.DataSetName = "WonderShoesDataSet";
-            this.wonderShoesDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.wonderShoes_KornDataSet.DataSetName = "WonderShoes_KornDataSet";
+            this.wonderShoes_KornDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // factoriesTableAdapter
             // 
@@ -127,7 +127,7 @@
             this.splitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.factoriesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wonderShoesDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.wonderShoes_KornDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -139,7 +139,7 @@
         private System.Windows.Forms.Label App_Name;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.BindingSource factoriesBindingSource;
-        private WonderShoes_KornDataSet wonderShoesDataSet;
+        private WonderShoes_KornDataSet wonderShoes_KornDataSet;
         private WonderShoes_KornDataSetTableAdapters.FactoriesTableAdapter factoriesTableAdapter;
     }
 }

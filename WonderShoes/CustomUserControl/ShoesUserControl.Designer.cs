@@ -49,7 +49,7 @@
             // Factory_Name_Label
             // 
             this.Factory_Name_Label.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Factory_Name_Label.Location = new System.Drawing.Point(256, 10);
+            this.Factory_Name_Label.Location = new System.Drawing.Point(256, 8);
             this.Factory_Name_Label.Name = "Factory_Name_Label";
             this.Factory_Name_Label.Size = new System.Drawing.Size(685, 42);
             this.Factory_Name_Label.TabIndex = 0;
@@ -60,7 +60,7 @@
             // 
             this.Category_Label.AutoSize = true;
             this.Category_Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Category_Label.Location = new System.Drawing.Point(186, 51);
+            this.Category_Label.Location = new System.Drawing.Point(195, 58);
             this.Category_Label.Name = "Category_Label";
             this.Category_Label.Size = new System.Drawing.Size(91, 23);
             this.Category_Label.TabIndex = 1;
@@ -70,7 +70,7 @@
             // 
             this.Stock_Label.AutoSize = true;
             this.Stock_Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Stock_Label.Location = new System.Drawing.Point(186, 80);
+            this.Stock_Label.Location = new System.Drawing.Point(195, 87);
             this.Stock_Label.Name = "Stock_Label";
             this.Stock_Label.Size = new System.Drawing.Size(102, 23);
             this.Stock_Label.TabIndex = 2;
@@ -79,7 +79,7 @@
             // Composition_Label
             // 
             this.Composition_Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Composition_Label.Location = new System.Drawing.Point(186, 109);
+            this.Composition_Label.Location = new System.Drawing.Point(195, 116);
             this.Composition_Label.Name = "Composition_Label";
             this.Composition_Label.Size = new System.Drawing.Size(570, 84);
             this.Composition_Label.TabIndex = 3;
@@ -87,8 +87,8 @@
             // 
             // Price_Label
             // 
-            this.Price_Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Price_Label.Location = new System.Drawing.Point(830, 127);
+            this.Price_Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Price_Label.Location = new System.Drawing.Point(843, 87);
             this.Price_Label.Name = "Price_Label";
             this.Price_Label.Size = new System.Drawing.Size(208, 22);
             this.Price_Label.TabIndex = 4;
@@ -99,9 +99,9 @@
             // 
             this.AddToCart_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(112)))), ((int)(((byte)(178)))), ((int)(((byte)(175)))));
             this.AddToCart_Btn.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.AddToCart_Btn.Location = new System.Drawing.Point(830, 157);
+            this.AddToCart_Btn.Location = new System.Drawing.Point(847, 169);
             this.AddToCart_Btn.Name = "AddToCart_Btn";
-            this.AddToCart_Btn.Size = new System.Drawing.Size(204, 31);
+            this.AddToCart_Btn.Size = new System.Drawing.Size(192, 31);
             this.AddToCart_Btn.TabIndex = 6;
             this.AddToCart_Btn.Text = "Добавить в корзину";
             this.AddToCart_Btn.UseVisualStyleBackColor = false;
@@ -110,9 +110,9 @@
             // Shoes_Image
             // 
             this.Shoes_Image.Image = global::WonderShoes.Properties.Resources.picture;
-            this.Shoes_Image.Location = new System.Drawing.Point(9, 31);
+            this.Shoes_Image.Location = new System.Drawing.Point(5, 35);
             this.Shoes_Image.Name = "Shoes_Image";
-            this.Shoes_Image.Size = new System.Drawing.Size(158, 124);
+            this.Shoes_Image.Size = new System.Drawing.Size(180, 139);
             this.Shoes_Image.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Shoes_Image.TabIndex = 5;
             this.Shoes_Image.TabStop = false;
@@ -148,7 +148,7 @@
             this.comboBox_Size.DisplayMember = "Size";
             this.comboBox_Size.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox_Size.FormattingEnabled = true;
-            this.comboBox_Size.Location = new System.Drawing.Point(834, 96);
+            this.comboBox_Size.Location = new System.Drawing.Point(847, 140);
             this.comboBox_Size.Name = "comboBox_Size";
             this.comboBox_Size.Size = new System.Drawing.Size(63, 23);
             this.comboBox_Size.TabIndex = 7;
