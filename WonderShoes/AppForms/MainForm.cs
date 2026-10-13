@@ -20,6 +20,7 @@ namespace WonderShoes.AppForms
         private int currentFactory = 0;
         private int currentSort = 0;
         private string currentSearch = "";
+
         public MainForm()
         {
             InitializeComponent();
@@ -196,5 +197,40 @@ namespace WonderShoes.AppForms
         {
             Application.Exit();
         }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            UserCart userCart = new UserCart();
+            userCart.Owner = this;
+            userCart.ShowDialog();
+        }
+
+        private List<CartItem> _cart = new List<CartItem>();
+
+        public List<CartItem> GetCart()
+        {
+            return _cart;
+        }
+
+        public bool AddToCart(Products product, string size)
+        {
+            int stock = product.Product_Stock
+                .Where(s => s.Size.ToString() == size)
+                .Sum(s => s.Quantity);
+
+            CartItem item = _cart.FirstOrDefault(c => c.Product.Id_Product == product.Id_Product && c.Size == size);
+            int inCart = item != null ? item.Quantity : 0;
+
+            if (inCart >= stock)
+                return false;
+
+            if (item == null)
+                _cart.Add(new CartItem { Product = product, Size = size, Quantity = 1 });
+            else
+                item.Quantity++;
+
+            return true;
+        }
+
     }
 }

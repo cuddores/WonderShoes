@@ -8,7 +8,7 @@ namespace WonderShoes.Models
     public partial class ShoesModelDb : DbContext
     {
         public ShoesModelDb()
-            : base("name=ShoesModelDb2")
+            : base("name=ShoesModelDb3")
         {
         }
 

@@ -37,6 +37,7 @@
             this.factoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.wonderShoes_KornDataSet = new WonderShoes.WonderShoes_KornDataSet();
             this.factoriesTableAdapter = new WonderShoes.WonderShoes_KornDataSetTableAdapters.FactoriesTableAdapter();
+            this.CartItems_Quantity = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -53,7 +54,7 @@
             this.Cart_List.Location = new System.Drawing.Point(0, 0);
             this.Cart_List.Name = "Cart_List";
             this.Cart_List.Padding = new System.Windows.Forms.Padding(3);
-            this.Cart_List.Size = new System.Drawing.Size(1099, 541);
+            this.Cart_List.Size = new System.Drawing.Size(1099, 643);
             this.Cart_List.TabIndex = 0;
             // 
             // splitContainer1
@@ -65,23 +66,24 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.CartItems_Quantity);
             this.splitContainer1.Panel1.Controls.Add(this.App_Name);
             this.splitContainer1.Panel1.Controls.Add(this.pictureBox1);
             // 
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.Cart_List);
-            this.splitContainer1.Size = new System.Drawing.Size(1099, 646);
-            this.splitContainer1.SplitterDistance = 101;
+            this.splitContainer1.Size = new System.Drawing.Size(1099, 745);
+            this.splitContainer1.SplitterDistance = 98;
             this.splitContainer1.TabIndex = 2;
             // 
             // App_Name
             // 
             this.App_Name.AutoSize = true;
-            this.App_Name.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.App_Name.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.App_Name.Location = new System.Drawing.Point(92, 12);
             this.App_Name.Name = "App_Name";
-            this.App_Name.Size = new System.Drawing.Size(136, 25);
+            this.App_Name.Size = new System.Drawing.Size(133, 29);
             this.App_Name.TabIndex = 1;
             this.App_Name.Text = "Чудо Обувь";
             // 
@@ -109,17 +111,28 @@
             // 
             this.factoriesTableAdapter.ClearBeforeFill = true;
             // 
+            // CartItems_Quantity
+            // 
+            this.CartItems_Quantity.AutoSize = true;
+            this.CartItems_Quantity.Font = new System.Drawing.Font("Calibri", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.CartItems_Quantity.Location = new System.Drawing.Point(92, 44);
+            this.CartItems_Quantity.Name = "CartItems_Quantity";
+            this.CartItems_Quantity.Size = new System.Drawing.Size(106, 18);
+            this.CartItems_Quantity.TabIndex = 2;
+            this.CartItems_Quantity.Text = "Кол-во товаров";
+            // 
             // UserCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1099, 646);
+            this.ClientSize = new System.Drawing.Size(1099, 745);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserCart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Корзина заказа";
+            this.Load += new System.EventHandler(this.UserCart_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -141,5 +154,6 @@
         private System.Windows.Forms.BindingSource factoriesBindingSource;
         private WonderShoes_KornDataSet wonderShoes_KornDataSet;
         private WonderShoes_KornDataSetTableAdapters.FactoriesTableAdapter factoriesTableAdapter;
+        private System.Windows.Forms.Label CartItems_Quantity;
     }
 }

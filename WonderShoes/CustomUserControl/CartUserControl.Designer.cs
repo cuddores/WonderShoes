@@ -37,13 +37,13 @@
             this.tableAdapterManager = new WonderShoes.WonderShoes_KornDataSetTableAdapters.TableAdapterManager();
             this.productSizeRangeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
+            this.QuantityShoes = new System.Windows.Forms.NumericUpDown();
             this.Cost_Label = new System.Windows.Forms.Label();
             this.ShoesSize = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Shoes_Image)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wonderShoesDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.productSizeRangeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QuantityShoes)).BeginInit();
             this.SuspendLayout();
             // 
             // Shoes_Image
@@ -59,9 +59,9 @@
             // PriceCart_Label
             // 
             this.PriceCart_Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.PriceCart_Label.Location = new System.Drawing.Point(444, 86);
+            this.PriceCart_Label.Location = new System.Drawing.Point(186, 138);
             this.PriceCart_Label.Name = "PriceCart_Label";
-            this.PriceCart_Label.Size = new System.Drawing.Size(167, 22);
+            this.PriceCart_Label.Size = new System.Drawing.Size(178, 22);
             this.PriceCart_Label.TabIndex = 12;
             this.PriceCart_Label.Text = "Цена";
             this.PriceCart_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -74,7 +74,6 @@
             this.Shoes_Type_Label.Size = new System.Drawing.Size(263, 26);
             this.Shoes_Type_Label.TabIndex = 8;
             this.Shoes_Type_Label.Text = "Вид обуви";
-            this.Shoes_Type_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // wonderShoesDataSet
             // 
@@ -108,34 +107,45 @@
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(186, 60);
+            this.label1.Location = new System.Drawing.Point(186, 81);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(248, 78);
+            this.label1.Size = new System.Drawing.Size(539, 26);
             this.label1.TabIndex = 16;
             this.label1.Text = "Наименование";
             // 
-            // numericUpDown1
+            // QuantityShoes
             // 
-            this.numericUpDown1.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.numericUpDown1.Location = new System.Drawing.Point(620, 82);
-            this.numericUpDown1.Name = "numericUpDown1";
-            this.numericUpDown1.Size = new System.Drawing.Size(64, 31);
-            this.numericUpDown1.TabIndex = 17;
+            this.QuantityShoes.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.QuantityShoes.Location = new System.Drawing.Point(779, 79);
+            this.QuantityShoes.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.QuantityShoes.Name = "QuantityShoes";
+            this.QuantityShoes.Size = new System.Drawing.Size(64, 31);
+            this.QuantityShoes.TabIndex = 17;
+            this.QuantityShoes.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.QuantityShoes.ValueChanged += new System.EventHandler(this.QuantityShoes_ValueChanged);
             // 
             // Cost_Label
             // 
             this.Cost_Label.Font = new System.Drawing.Font("Calibri", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Cost_Label.Location = new System.Drawing.Point(694, 86);
+            this.Cost_Label.Location = new System.Drawing.Point(578, 162);
             this.Cost_Label.Name = "Cost_Label";
-            this.Cost_Label.Size = new System.Drawing.Size(169, 22);
+            this.Cost_Label.Size = new System.Drawing.Size(289, 22);
             this.Cost_Label.TabIndex = 18;
             this.Cost_Label.Text = "Стоимость";
-            this.Cost_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Cost_Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // ShoesSize
             // 
             this.ShoesSize.Font = new System.Drawing.Font("Calibri", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.ShoesSize.Location = new System.Drawing.Point(186, 138);
+            this.ShoesSize.Location = new System.Drawing.Point(186, 111);
             this.ShoesSize.Name = "ShoesSize";
             this.ShoesSize.Size = new System.Drawing.Size(211, 23);
             this.ShoesSize.TabIndex = 19;
@@ -148,7 +158,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(210)))), ((int)(((byte)(246)))), ((int)(((byte)(231)))));
             this.Controls.Add(this.ShoesSize);
             this.Controls.Add(this.Cost_Label);
-            this.Controls.Add(this.numericUpDown1);
+            this.Controls.Add(this.QuantityShoes);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Shoes_Image);
             this.Controls.Add(this.PriceCart_Label);
@@ -158,7 +168,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Shoes_Image)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wonderShoesDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.productSizeRangeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QuantityShoes)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -172,7 +182,7 @@
         private WonderShoes_KornDataSetTableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingSource productSizeRangeBindingSource;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.NumericUpDown numericUpDown1;
+        private System.Windows.Forms.NumericUpDown QuantityShoes;
         private System.Windows.Forms.Label Cost_Label;
         private System.Windows.Forms.Label ShoesSize;
     }

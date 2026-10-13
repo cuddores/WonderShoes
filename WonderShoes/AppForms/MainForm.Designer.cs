@@ -41,17 +41,19 @@
             this.comboBox_Sorting = new System.Windows.Forms.ComboBox();
             this.Login_Role_Label = new System.Windows.Forms.Label();
             this.App_Name = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.factoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.wonderShoes_KornDataSet = new WonderShoes.WonderShoes_KornDataSet();
             this.factoriesTableAdapter = new WonderShoes.WonderShoes_KornDataSetTableAdapters.FactoriesTableAdapter();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.factoriesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.wonderShoes_KornDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Shoes_List
@@ -74,6 +76,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            this.splitContainer1.Panel1.Controls.Add(this.pictureBox2);
             this.splitContainer1.Panel1.Controls.Add(this.button_Clear_Filter);
             this.splitContainer1.Panel1.Controls.Add(this.comboBox_Filtering);
             this.splitContainer1.Panel1.Controls.Add(this.label_Search);
@@ -95,7 +98,7 @@
             // button_Clear_Filter
             // 
             this.button_Clear_Filter.Font = new System.Drawing.Font("Calibri", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button_Clear_Filter.Location = new System.Drawing.Point(474, 35);
+            this.button_Clear_Filter.Location = new System.Drawing.Point(326, 56);
             this.button_Clear_Filter.Name = "button_Clear_Filter";
             this.button_Clear_Filter.Size = new System.Drawing.Size(63, 23);
             this.button_Clear_Filter.TabIndex = 3;
@@ -107,7 +110,7 @@
             // 
             this.comboBox_Filtering.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox_Filtering.FormattingEnabled = true;
-            this.comboBox_Filtering.Location = new System.Drawing.Point(543, 35);
+            this.comboBox_Filtering.Location = new System.Drawing.Point(395, 56);
             this.comboBox_Filtering.Name = "comboBox_Filtering";
             this.comboBox_Filtering.Size = new System.Drawing.Size(152, 23);
             this.comboBox_Filtering.TabIndex = 0;
@@ -117,7 +120,7 @@
             // 
             this.label_Search.AutoSize = true;
             this.label_Search.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Search.Location = new System.Drawing.Point(898, 12);
+            this.label_Search.Location = new System.Drawing.Point(750, 33);
             this.label_Search.Name = "label_Search";
             this.label_Search.Size = new System.Drawing.Size(54, 19);
             this.label_Search.TabIndex = 9;
@@ -127,7 +130,7 @@
             // 
             this.label_Filtering.AutoSize = true;
             this.label_Filtering.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Filtering.Location = new System.Drawing.Point(543, 12);
+            this.label_Filtering.Location = new System.Drawing.Point(395, 33);
             this.label_Filtering.Name = "label_Filtering";
             this.label_Filtering.Size = new System.Drawing.Size(96, 19);
             this.label_Filtering.TabIndex = 8;
@@ -137,7 +140,7 @@
             // 
             this.label_Sorting.AutoSize = true;
             this.label_Sorting.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_Sorting.Location = new System.Drawing.Point(702, 12);
+            this.label_Sorting.Location = new System.Drawing.Point(554, 33);
             this.label_Sorting.Name = "label_Sorting";
             this.label_Sorting.Size = new System.Drawing.Size(92, 19);
             this.label_Sorting.TabIndex = 7;
@@ -146,7 +149,7 @@
             // textBox_Search
             // 
             this.textBox_Search.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox_Search.Location = new System.Drawing.Point(898, 35);
+            this.textBox_Search.Location = new System.Drawing.Point(750, 56);
             this.textBox_Search.Name = "textBox_Search";
             this.textBox_Search.Size = new System.Drawing.Size(193, 23);
             this.textBox_Search.TabIndex = 2;
@@ -156,7 +159,7 @@
             // 
             this.comboBox_Sorting.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.comboBox_Sorting.FormattingEnabled = true;
-            this.comboBox_Sorting.Location = new System.Drawing.Point(702, 35);
+            this.comboBox_Sorting.Location = new System.Drawing.Point(554, 56);
             this.comboBox_Sorting.Name = "comboBox_Sorting";
             this.comboBox_Sorting.Size = new System.Drawing.Size(189, 23);
             this.comboBox_Sorting.TabIndex = 1;
@@ -182,17 +185,6 @@
             this.App_Name.TabIndex = 1;
             this.App_Name.Text = "Чудо Обувь";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pictureBox1.Image = global::WonderShoes.Properties.Resources.Чудо_Обувь;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 14);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(70, 70);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
             // factoriesBindingSource
             // 
             this.factoriesBindingSource.DataMember = "Factories";
@@ -206,6 +198,28 @@
             // factoriesTableAdapter
             // 
             this.factoriesTableAdapter.ClearBeforeFill = true;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::WonderShoes.Properties.Resources.cart;
+            this.pictureBox2.Location = new System.Drawing.Point(1014, 25);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(55, 49);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pictureBox1.Image = global::WonderShoes.Properties.Resources.Чудо_Обувь;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 14);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(70, 70);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
             // MainForm
             // 
@@ -225,9 +239,10 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.factoriesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.wonderShoes_KornDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -249,5 +264,6 @@
         private System.Windows.Forms.BindingSource factoriesBindingSource;
         private System.Windows.Forms.ComboBox comboBox_Filtering;
         private System.Windows.Forms.Button button_Clear_Filter;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
