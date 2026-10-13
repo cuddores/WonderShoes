@@ -108,6 +108,7 @@
     <Compile Include="CustomUserControl\ShoesUserControl.Designer.cs">
       <DependentUpon>ShoesUserControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\Categories.cs" />
     <Compile Include="Models\Factories.cs" />
     <Compile Include="Models\Orders.cs" />
@@ -197,6 +198,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Add.png" />
+    <None Include="Resources\cart.png" />
     <Content Include="Чудо Обувь.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

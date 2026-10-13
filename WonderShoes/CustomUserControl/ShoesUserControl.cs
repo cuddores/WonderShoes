@@ -19,7 +19,6 @@ namespace WonderShoes.CustomUserControl
     {
         private Products _products;
         private Users _user;
-        //private int currentProductId;
         private Color _baseColor;
 
         public ShoesUserControl(Products products, Users user)
@@ -71,7 +70,15 @@ namespace WonderShoes.CustomUserControl
                 return;
             }
 
-            
+            MainForm main = this.FindForm() as MainForm;
+            if (main != null)
+            {
+                bool ok = main.AddToCart(_products, comboBox_Size.SelectedItem.ToString());
+                if (ok)
+                    MessageBox.Show("Товар добавлен в корзину", "Корзина", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                else
+                    MessageBox.Show("Больше нет в наличии", "Корзина", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
 
         private void comboBox_Size_SelectedIndexChanged(object sender, EventArgs e)

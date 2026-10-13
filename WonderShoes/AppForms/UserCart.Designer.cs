@@ -53,7 +53,7 @@
             this.Cart_List.Location = new System.Drawing.Point(0, 0);
             this.Cart_List.Name = "Cart_List";
             this.Cart_List.Padding = new System.Windows.Forms.Padding(3);
-            this.Cart_List.Size = new System.Drawing.Size(1099, 541);
+            this.Cart_List.Size = new System.Drawing.Size(1099, 643);
             this.Cart_List.TabIndex = 0;
             // 
             // splitContainer1
@@ -71,8 +71,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.Cart_List);
-            this.splitContainer1.Size = new System.Drawing.Size(1099, 646);
-            this.splitContainer1.SplitterDistance = 101;
+            this.splitContainer1.Size = new System.Drawing.Size(1099, 745);
+            this.splitContainer1.SplitterDistance = 98;
             this.splitContainer1.TabIndex = 2;
             // 
             // App_Name
@@ -114,12 +114,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1099, 646);
+            this.ClientSize = new System.Drawing.Size(1099, 745);
             this.Controls.Add(this.splitContainer1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "UserCart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Корзина заказа";
+            this.Load += new System.EventHandler(this.UserCart_Load);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
